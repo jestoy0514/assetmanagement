@@ -1,0 +1,190 @@
+/* All the stylings of the pages will be on this page */
+
+@font-face {
+  font-family: AnticSlab;
+  src: url(/css/fonts/AnticSlab-Regular.ttf);
+}
+body {
+  background-color: gray;
+  font-family: 'AnticSlab', serif;
+}
+
+header {
+  background-image: url(/css/image/wallpaper.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:20px;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+header p {
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+/*
+tr, td {
+  padding: 10px;
+}
+*/
+
+nav {
+  background-color: gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  background-color: gray;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: gray;
+}
+
+.container {
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px black;
+  background-color: white;
+  padding: 10px;
+}
+
+.sidemenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidemenu li a {
+  color: white;
+  background-color: gray;
+  text-decoration: none;
+  padding: 5px;
+  display: block;
+  width: 120px;
+}
+
+.sidemenu li a:hover {
+  color: gray;
+  background-color: white
+}
+
+.sidemenu li {
+  text-align: left;
+}
+
+.cust_button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  
+  text-decoration: none;
+  color: initial;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+footer {
+  text-align: center;
+  color: black;
+  padding-top: 30px;
+}
+
+footer a {
+  color: gray;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-shadow: 1px 1px black;
+}
+
+.listusers {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.listusers tr {
+  padding: 5px;
+}
+
+.listusers tr td{
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin: 0;
+  padding: 5px;
+}
+
+.listusers th {
+  border-bottom: 1px solid gray;
+  background-color: gray;
+  color: white;
+  padding: 5px;
+}
+
+.listusers tr:nth-child(even){
+  background-color: #d5deed;
+}
+
+.loginfailed {
+  background-color: pink;
+}
+
+.submit_btn {
+  margin: 10px;
+}
+
+article {
+  padding: 10px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.myimage {
+  border-radius: 100px;
+  border: 2px solid gray;
+  width: 100px;
+  height: 100px;
+}
+
+.cus_article {
+    border: 1px solid gray;
+    text-align: justify;
+    text-justify: inter-word;
+    background-color: #B1DBEC;
+    border-radius: 20px;
+    width: 50%;
+    padding: 10px;
+}
+
+#myhome {
+  border-collapse: separate;
+  border-spacing: 20px 20px;
+}

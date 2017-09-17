@@ -1,0 +1,24 @@
+Create Table department(id Integer Primary Key Autoincrement,
+    name Text, room Text, company Text);
+Create Table users(id Integer Primary Key Autoincrement,
+    username Text, password Text, firstname Text, lastname Text,
+    email Text);
+Create Table employees(id Integer Primary Key Autoincrement,
+    firstname Text, lastname Text, filenumber Text, dept_id Integer,
+    Foreign Key(dept_id) References department(id));
+Create Table category(id Integer Primary Key Autoincrement,
+    description Text);
+Create Table brand(id Integer Primary Key Autoincrement,
+    name Text);
+Create Table status(id Integer Primary Key Autoincrement,
+    name Text);
+Create Table asset(id Integer Primary Key Autoincrement,
+    cat_id Integer, type Text, description Text, brand_id Integer,
+    date Text, quantity Real, price Real, status_id Integer,
+    Foreign Key(cat_id) References category(id),
+    Foreign Key(brand_id) References brand(id),
+    Foreign Key(status_id) References status(id));
+Create Table assignment(id Integer Primary Key Autoincrement,
+    asset_id Integer, emp_id Integer,
+    Foreign Key(asset_id) References asset(id), Foreign Key(emp_id)
+    References employees(id));
